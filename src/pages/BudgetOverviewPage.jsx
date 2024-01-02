@@ -26,7 +26,7 @@ const BudgetOverviewPage = () => {
   return (
     <section>
       <div>
-        <h1 className="text-[40px]">
+        <h1 className="text-[40px] my-[.7em] ml-[1em]">
           <span
             style={{
               color: `hsl(${budget?.color})`,
@@ -36,11 +36,11 @@ const BudgetOverviewPage = () => {
           </span>
           &nbsp;Overview
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-start sm:gap-[.5em] lg:gap-0">
-          <>
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-start sm:gap-[.5em] lg:gap-0">
+          <div className="mb-[4em] mx-[2em]">
             <BudgetItem budget={budget} showDelete={showDelete} budgetId={id} />
-          </>
-          <div className="mr-[5%]">
+          </div>
+          <div className="mr-[5%] mb-[5em]">
             <BudgetCard showBudgetCategory={false} budget={budget} id={id} />
           </div>
         </div>
@@ -65,7 +65,7 @@ const BudgetOverviewPage = () => {
           <Table showBudgetName={showBudgetName} />
         </div>
       </div>
-      <div className="mt-[1em]">
+      <div className="mt-[2em]">
         <button
           className="cursor-pointer group relative inline-flex items-center gap-1.5 
         px-8 py-4 bg-black bg-opacity-80 text-[#f1f1f1] 

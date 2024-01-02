@@ -6,15 +6,12 @@ export const generateRandomColor = () => {
   return `${existingBudgetsLength * 34} 65% 50%`;
 };
 
-// LOCAL STORAGE FUNCTIONS
-// Save Data in Local Storage
+// funnction to fetch data from local storage
 export const fetchData = (key) => {
   const data = localStorage.getItem(key);
-  if (!data) {
-    throw new Error(`No data found for key "${key}"`);
-  }
   return JSON.parse(data);
 };
+
 
 // Computation Functions
 // Expenses by budget

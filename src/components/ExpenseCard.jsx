@@ -86,7 +86,7 @@ const ExpenseCard = () => {
           ></input>
           <input type="hidden" name="_action" value="addBudget" />
         </div>
-        <div className="flex flex-row lg:flex-row sm:gap-2 sm:flex-col gap-2 ">
+        <div className="flex flex-col lg:flex-row sm:gap-2 sm:flex-col gap-2 ">
           <div className="sm:mt-[2em] sm:mx-[2em] xs:mx-[2em] ml-0 mt-[2em]">
             {/* <Button className="px-8 py-4" text="Create Budget 🪙" disabled={isSubmitting} /> */}
             <button

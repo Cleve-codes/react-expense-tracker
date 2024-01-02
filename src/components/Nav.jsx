@@ -30,14 +30,14 @@ const Nav = () => {
 
       <form
         onSubmit={handleSumit}
-        className="border-2 border-red-500 mr-[5%] rounded-xl"
+        className="border-2 md:border-red-500 mr-[5%] rounded-xl"
       >
         <button
           type="submit"
           className="text-black px-8 py-4 flex  justify-center items-center gap-2"
           title="Delete Account"
         >
-          <p className="font-bold text-[20px] sm:block hidden" to="/">
+          <p className="font-bold text-[20px] sm:block hidden">
             Delete User
           </p>
           <FaRegTrashAlt className="text-red-500" />

@@ -1,9 +1,15 @@
-import { useFetcher, useLoaderData } from "react-router-dom";
-import Button from "./Button";
+// React libs
 import { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
-import { getTotalExpensesByBudget, wait } from "../helpers";
 import PropTypes from "prop-types";
+
+// Components
+import Button from "./Button";
+
+// Helpers
+import { getTotalExpensesByBudget, wait } from "../helpers";
+
+// Context
 import { useHomeContext } from "../context/HomeContext";
 
 const BudgetCard = ({ showBudgetCategory = true, budget, id }) => {
@@ -135,8 +141,8 @@ const BudgetCard = ({ showBudgetCategory = true, budget, id }) => {
           </span>{" "}
           Expense.
         </h1>
-        <div className="flex flex-col lg:flex-row  justify-center mt-[2%]">
-          <div className="flex flex-col mx-[2em] sm:ml-[2em]  gap-[.5em] ">
+        <div className="flex flex-col 2xl:flex-row justify-center mt-[2%] mx-[2em]">
+          <div className="flex flex-col sm:ml-[2em]  gap-[.5em] ">
             <label
               className="font-semibold text-[20px] text-gray-700"
               name="expense"
@@ -155,7 +161,7 @@ const BudgetCard = ({ showBudgetCategory = true, budget, id }) => {
               // disabled={disabled}
             ></input>
           </div>
-          <div className="flex flex-col mx-[2em] sm:ml-[2em] gap-[.5em]">
+          <div className="flex flex-col sm:ml-[2em] gap-[.5em]">
             <label
               className="font-semibold text-[20px] text-gray-700"
               name="amount"
@@ -164,7 +170,7 @@ const BudgetCard = ({ showBudgetCategory = true, budget, id }) => {
               Amount
             </label>
             <input
-              className="rounded-sm outline-button px-8 py-4"
+              className="rounded-sm outline-button px-8 py-4 "
               type="number"
               name="newExpenseAmount"
               step={0.01}

@@ -11,7 +11,7 @@ const IndexRoute = () => {
   return (
     <>
       <div>
-        <h1 className="text-[55px] font-bold mt-[.5em]">
+        <h1 className="text-[40px] sm:text-[55px] font-bold mt-[.5em]">
           Welcome back, <span>{userName}</span>
         </h1>
         {budgets.length === 0 && (
@@ -26,10 +26,14 @@ const IndexRoute = () => {
         )}
       </div>
       <div>
-        <div className="mt-[2em] mr-[15%] grid grid-cols-1 2xl:grid-cols-2 2xl:justify-center gap-[2.5em]">
+        <div className="mt-[2em] mr-[15%] grid grid-cols-1 2xl:grid-cols-2 2xl:mr-0 md:justify-items-center gap-[2.5em]">
           <ExpenseCard />
           {budgets?.length > 0 && <BudgetCard id={undefined} />}
         </div>
+        {/* <div className="mt-[2em] mr-[15%] grid grid-cols-1 2xl:grid-cols-2 2xl:justify-center gap-[2.5em]">
+          <ExpenseCard />
+          {budgets?.length > 0 && <BudgetCard id={undefined} />}
+        </div> */}
       </div>
     </>
   );

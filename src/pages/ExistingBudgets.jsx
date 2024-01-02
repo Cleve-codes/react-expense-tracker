@@ -29,7 +29,7 @@ const ExistingBudgets = () => {
 
 
   return (
-    <section className="mt-[2%]">
+    <section className="mt-[2%] lg:mt-0">
       <h1 className="text-[50px] mb-4">
         <span className="text-[55px] font-semibold">{userName}&apos;s</span>{" "}
         Existing Budgets
